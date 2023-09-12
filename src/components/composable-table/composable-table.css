@@ -1,0 +1,132 @@
+:host {
+    font-family: Arial, sans-serif;
+   }
+
+  .table-container {
+    padding: 10px;
+    height: 100%;
+    position:relative;
+    opacity: 0;
+    transition: opacity 0.3s ease;  
+    visibility: hidden; 
+   }
+
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .title-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .table-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+   }
+  
+  .title-right {
+    display: flex;
+    align-items: center;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+      padding: 8px;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+  }
+
+  td {
+     padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+
+  tr:hover {
+    background-color: #e9ecef;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;  
+  }
+
+    #searchInput {
+      max-width: 150px;
+      padding: 8px;
+      margin-left: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: none;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    #searchInput:focus {
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+  .sort-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  #tableWrapper {
+    margin-top: 20px;
+  }
+
+  .table-title {
+    text-align: center;
+    margin-bottom: 10px; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  margin: 0 5px;
+  padding: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.pagination-button:hover {
+  color: #666;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: #777;
+  margin: 0 10px;
+  white-space: nowrap; 
+}
