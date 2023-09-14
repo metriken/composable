@@ -9,9 +9,8 @@
 
 | Property       | Attribute      | Description | Type     | Default     |
 | -------------- | -------------- | ----------- | -------- | ----------- |
-| `headers`      | `headers`      |             | `string` | `undefined` |
+| `data`         | `data`         |             | `string` | `undefined` |
 | `itemsperpage` | `itemsperpage` |             | `number` | `undefined` |
-| `values`       | `values`       |             | `string` | `undefined` |
 
 
 ----------------------------------------------
